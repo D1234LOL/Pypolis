@@ -2,6 +2,10 @@
 
 ## **Versión [Alpha 1.0](https://github.com/D1234LOL/Pypolis/releases/tag/alpha-1.0)**
 
+## 🗒️ FEEDBACK 🗒️
+
+Si usted quiere mandar Feedback el creador, lo puede hacer con el siguiente enlace (link o URL) [aquí](https://docs.google.com/forms/d/e/1FAIpQLSfGjXDD5EIta2Yz5SXtyf2hABC0FlfCAlAvwb1uoQsvpJA-WA/viewform?usp=sharing&ouid=102630784934022953254)
+
 ### ⚠️ **ATENCIÓN** ⚠️
 
 > Si usted es desarrollador y desea ver o compilar el código fuente, recuerde que **debe usar la última versión de Ren'Py**, que puede descargar desde [aquí](https://www.renpy.org/latest.html).  
