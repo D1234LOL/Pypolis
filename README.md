@@ -1,6 +1,6 @@
 # Pypolis — Un paseo virtual por los lenguajes de programación
 
-## **Versión Alpha 1.0**
+## **Versión [Alpha 1.0](https://github.com/D1234LOL/Pypolis/releases/tag/alpha-1.0)**
 
 ### ⚠️ **ATENCIÓN** ⚠️
 
@@ -58,10 +58,10 @@ Puedes encontrar los archivos disponibles en la [sección de Releases](https://g
 - `pypolis-alpha1.0-windows.zip`
 - 🐧 `pypolis-alpha1.0-linux.tar.bz2`
 - 🍎 `pypolis-alpha1.0-mac.dmg`
-- 📁 `pypolis-alpha1.0-source.zip` (código fuente en .zip y .tar.xz)
+- 📁 `Source code` (código fuente en .zip y .tar.xz)
 
 > 📁 **Este repositorio no incluye binarios ni el código fuente comprimido.**  
-> Consulta la pestaña de Releases para descargar la última versión disponible.
+> Consulta la pestaña de [Releases](https://github.com/D1234LOL/Pypolis/releases) para descargar la última versión disponible.
 
 ---
 
