@@ -1,47 +1,30 @@
-2025-06-02 19:19:23 UTC
+2025-06-02 19:23:13 UTC
 Linux-6.15.0-2-cachyos-x86_64-with-glibc2.41
 Ren'Py 8.3.6.25022803
 
-Early init took 0.10s
-Loading error handling took 0.05s
-Loading script took 0.35s
-Loading save slot metadata took 0.05s
+Early init took 0.07s
+Loading error handling took 0.12s
+Loading script took 2.46s
+Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.08s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
+Running init code took 0.17s
+Loading analysis data took 0.00s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Backing up script files to '/home/d1234lol/.renpy/backups/Pypolis-public':
-Dump and make backups took 0.11s
+Dump and make backups took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.07s
+Initial gc took 0.08s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.07s
+Init translation took 0.06s
 Build styles took 0.01s
-Load screen analysis took 0.01s
-Analyze screens took 0.03s
-Save screen analysis took 0.04s
-Prepare screens took 0.14s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Interface start took 0.18s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'AMD'"
-Renderer: b'AMD Radeon Vega 3 Graphics (radeonsi, raven2, ACO, DRM 3.63, 6.15.0-2-cachyos)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.1.1-cachyos1.3'
-Display Info: None
-Screen sizes: virtual=(2560, 1440) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(2560, 1440) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(2560, 1440) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.03s
+Prepare screens took 0.24s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.03s

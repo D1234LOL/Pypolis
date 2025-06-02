@@ -139,7 +139,7 @@ label start:
     menu:
         "mujer":
             n "ah!...no es común ver por aquí mujeres...pero puedes conocer a las mujeres de este lugar o otros lugares ^^"
-            n "lo importante es que te diviertas y{sep}o aprendas algo nuevo"
+            n "lo importante es que te diviertas y/o aprendas algo nuevo"
             n "sino te molesta, te trateré como él, porque aveces me lío, así que, prefiero referirme a todos como él...ok?"
             menu:
                 "ok":
@@ -155,7 +155,7 @@ label start:
                     call inicio from _call_inicio_1
         "hombre":
             n "oh, bueno, no te preocupes, yo te enseñaré un poco este lugar y otros lugares :D"
-            n "lo importante es que te diviertas y{sep}o aprendas algo nuevo"
+            n "lo importante es que te diviertas y/o aprendas algo nuevo"
             n "eso es lo que me importa ahora mismo, después, te contaré la historia"
             $ UsrGen = "man"
         "otr@":
