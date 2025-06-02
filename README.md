@@ -1,6 +1,24 @@
 # Pypolis — Un paseo virtual por los lenguajes de programación
 
-**Versión Alpha 1.0**
+## **Versión Alpha 1.0**
+
+### ⚠️ **ATENCIÓN** ⚠️
+
+> Si usted es desarrollador y desea ver o compilar el código fuente, recuerde que **debe usar la última versión de Ren'Py**, que puede descargar desde [aquí](https://www.renpy.org/latest.html).  
+> Este proyecto **no puede compilarse con herramientas externas** que no sean el entorno oficial de Ren'Py.  
+> Si solo desea probar el juego, vaya a la sección de [Releases](https://github.com/D1234LOL/Pypolis/releases) y descargue la versión ya compilada para su sistema operativo.
+
+### ℹ️ **CONSIDERACIÓN IMPORTANTE** ℹ️
+
+> Ren'Py **no ofrece soporte oficial** para los siguientes sistemas operativos (excepto mediante capas de compatibilidad como, por ejemplo, en [ChromeOS](https://www.renpy.org/doc/html/chromeos.html)):
+>
+> - **Distribuciones Linux de 32 bits**
+> - **Windows Vista o versiones anteriores**
+> - **OS X Mavericks o versiones anteriores de macOS**
+> - **ChromeOS**
+> - **FreeBSD**
+> - **Otros sistemas alternativos** como Haiku, Redox, ReactOS, etc.
+
 
 **Pypolis** es una novela visual educativa hecha con el motor de novelas visuales [Ren'Py](https://www.renpy.org/), diseñada con dos objetivos principales:
 
