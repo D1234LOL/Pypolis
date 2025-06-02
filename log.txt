@@ -1,13 +1,13 @@
-2025-06-02 19:23:13 UTC
+2025-06-02 19:56:28 UTC
 Linux-6.15.0-2-cachyos-x86_64-with-glibc2.41
 Ren'Py 8.3.6.25022803
 
 Early init took 0.07s
 Loading error handling took 0.12s
-Loading script took 2.46s
+Loading script took 2.55s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.17s
+Running init code took 0.16s
 Loading analysis data took 0.00s
 Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.02s
@@ -16,15 +16,15 @@ Backing up script files to '/home/d1234lol/.renpy/backups/Pypolis-public':
 Dump and make backups took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.08s
+Initial gc took 0.06s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
+Init translation took 0.07s
+Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.06s
-Save screen analysis took 0.03s
-Prepare screens took 0.24s
+Analyze screens took 0.05s
+Save screen analysis took 0.02s
+Prepare screens took 0.22s
 Save pyanalysis. took 0.02s
 Save bytecode. took 0.03s
