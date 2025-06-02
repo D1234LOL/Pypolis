@@ -3,7 +3,7 @@ label Brayn:
     Byn "...disculpe, usted quién es?"
     Chr "eeeehhh...y-yo soy [Usrn]"
     if Verify_num(Usrn) == True:
-        Byn "...es de borma, verdad? :/"
+        Byn "...es de borma, verdad? :{sep}"
         Chr "nop"
         Byn "no me gusta criticar nombres, pero sinceramente es un nombre raro..."
         Byn "casi ni parece un nombre..."
@@ -67,13 +67,13 @@ label Brayn:
             "C-Town":
                 "es una opción interesante, sinceramente hablando :3"
                 "así que, vamos ahí"
-                include f"history/C-Town.rpy"
+                include f"history{sep}C-Town.rpy"
                 call C from _call_C
             "Bashtopia":
-                include f"history/Bash-Island.rpy"
+                include f"history{sep}Bash-Island.rpy"
                 call Bash from _call_Bash
             "CPP-Town":
-                include f"history/CPP-Town.rpy"
+                include f"history{sep}CPP-Town.rpy"
                 call Cpp from _call_Cpp
     else:
         call fin from _call_fin

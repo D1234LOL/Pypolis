@@ -1,24 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 136, in script
-    include f"history{os.sep}Brayn.rpy"
-Exception: Sayer 'include' is not defined.
+  File "game/script.rpy", line 5, in script
+    init python:
+  File "game/script.rpy", line 7, in <module>
+    if os.name() == "nt":
+TypeError: 'str' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 136, in script
-    include f"history{os.sep}Brayn.rpy"
-  File "/home/d1234lol/Descargas/renpy-8.3.6-sdk/renpy/ast.py", line 2586, in execute
-    Say.execute(self)
-  File "/home/d1234lol/Descargas/renpy-8.3.6-sdk/renpy/ast.py", line 583, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/home/d1234lol/Descargas/renpy-8.3.6-sdk/renpy/ast.py", line 472, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'include' is not defined.
+  File "game/script.rpy", line 5, in script
+    init python:
+  File "/home/d1234lol/Descargas/renpy-8.3.6-sdk/renpy/ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/d1234lol/Descargas/renpy-8.3.6-sdk/renpy/python.py", line 1184, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 7, in <module>
+    if os.name() == "nt":
+TypeError: 'str' object is not callable
 
-Linux-6.12.28-1-MANJARO-x86_64-with-glibc2.41 x86_64
+Linux-6.15.0-2-cachyos-x86_64-with-glibc2.41 x86_64
 Ren'Py 8.3.6.25022803
-Pypolis 1.0
-Mon May 26 18:10:50 2025
+Pypolis Alpha-1.0
+Mon Jun  2 21:13:46 2025

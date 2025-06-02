@@ -4,6 +4,11 @@
 
 init python:
     import os, pygame, random
+    if os.name == "nt":
+        sep = "\\"
+    else:
+        sep = "/"
+
     """ si por si acaso quiero hacer algo con ventanas (creo que para una posible segunda alpha)
     import renpygame
     import renpygame as pygame
@@ -12,22 +17,22 @@ init python:
 
 # Personajes:
 
-define n = Character("Narrador", image=f"characters/narrator.png", color="#107492", what_size=50) # Narrador.
-define n_man = Character("Narrador", image=f"characters/narrator.png", color="#1d1092", what_font=f"fonts/Badd-Mono.ttf", what_size=50) # Narrador manipulado (es diferente por un font en específico).
+define n = Character("Narrador", image=f"characters{sep}narrator.png", color="#107492", what_size=50) # Narrador.
+define n_man = Character("Narrador", image=f"characters{sep}narrator.png", color="#1d1092", what_font=f"fonts{sep}Badd-Mono.ttf", what_size=50) # Narrador manipulado (es diferente por un font en específico).
 
-define Byn = Character("Brayn", image=f"characters/Brayn.png", color="#6d1092", what_font=f"fonts/JetBrainsMono.ttf", what_size=50) # un nuevo personaje llamado Brayn, que te ayudará en la aventura
+define Byn = Character("Brayn", image=f"characters{sep}Brayn.png", color="#6d1092", what_font=f"fonts{sep}JetBrainsMono.ttf", what_size=50) # un nuevo personaje llamado Brayn, que te ayudará en la aventura
 
 
-image n =       f"characters/narrator.png"             # Narrador normal
-image n_unw =   f"characters/narrator_unwilling.png"   # Narrador sin ganas
-image n_happy = f"characters/narrator_happy.png"       # Narrador feliz
-image n_ang =   f"characters/narrator_angry.png"       # Narrador enfadado
-image n_sad =   f"characters/narrator_sad.png"         # Narrador triste
-image n_man =   f"characters/narrator_manipulated.png" # Narrador manipulado
-image n_wat =   f"characters/narrator_what.png"        # Narrador que no sabe porque elegiste...eso...
+image n =       f"characters{sep}narrator.png"             # Narrador normal
+image n_unw =   f"characters{sep}narrator_unwilling.png"   # Narrador sin ganas
+image n_happy = f"characters{sep}narrator_happy.png"       # Narrador feliz
+image n_ang =   f"characters{sep}narrator_angry.png"       # Narrador enfadado
+image n_sad =   f"characters{sep}narrator_sad.png"         # Narrador triste
+image n_man =   f"characters{sep}narrator_manipulated.png" # Narrador manipulado
+image n_wat =   f"characters{sep}narrator_what.png"        # Narrador que no sabe porque elegiste...eso...
 
 # Brayn, un nuevo personaje de la historia :p
-image Brayn =   f"characters/Brayn.png"
+image Brayn =   f"characters{sep}Brayn.png"
 
 python:
     '''
@@ -65,12 +70,12 @@ python:
 
 label start:
     # esto es para la habitación principal (las imágenes))
-    image principal_room = f"rooms/room.png"
-    image lights_out_room = f"rooms/room_lights_out.png"
+    image principal_room = f"rooms{sep}room.png"
+    image lights_out_room = f"rooms{sep}room_lights_out.png"
     
     # gatitos ¿Porque gatitos? Porque me han pedido 
-    image kittens_room = f"rooms/room_2.png" # arreglar la escala a 1620 por 1080 redimensionando la imagen en el script
-    image y-derrepente-PUM = f"rooms/PUM_ya_esta_aqui_la_guerra.jpg"
+    image kittens_room = f"rooms{sep}room_2.png" # arreglar la escala a 1620 por 1080 redimensionando la imagen en el script
+    image y-derrepente-PUM = f"rooms{sep}PUM_ya_esta_aqui_la_guerra.jpg"
     
     transform center:
         xalign 0.5
@@ -130,11 +135,11 @@ label start:
     # 3. other
     #  3.1. other-woman
     #  3.2. other-man
-    # 4. terrenator, va a ser como un chiste, así que, te sientes como un coche de juguete a radiocontrol...si...bueno, yo no juzgo si te sientes caracterizado como un planta de Plants Vs Zombies ¯\_(ツ)_/¯
+    # 4. terrenator, va a ser como un chiste, así que, te sientes como un coche de juguete a radiocontrol...si...bueno, yo no juzgo si te sientes caracterizado como un planta de Plants Vs Zombies ¯\_(ツ)_{sep}¯
     menu:
         "mujer":
             n "ah!...no es común ver por aquí mujeres...pero puedes conocer a las mujeres de este lugar o otros lugares ^^"
-            n "lo importante es que te diviertas y/o aprendas algo nuevo"
+            n "lo importante es que te diviertas y{sep}o aprendas algo nuevo"
             n "sino te molesta, te trateré como él, porque aveces me lío, así que, prefiero referirme a todos como él...ok?"
             menu:
                 "ok":
@@ -150,7 +155,7 @@ label start:
                     call inicio from _call_inicio_1
         "hombre":
             n "oh, bueno, no te preocupes, yo te enseñaré un poco este lugar y otros lugares :D"
-            n "lo importante es que te diviertas y/o aprendas algo nuevo"
+            n "lo importante es que te diviertas y{sep}o aprendas algo nuevo"
             n "eso es lo que me importa ahora mismo, después, te contaré la historia"
             $ UsrGen = "man"
         "otr@":
@@ -448,13 +453,13 @@ label start:
                                 $ decision_2 = True
                                 call explorer from _call_explorer_1
 
-                            "alguien que funcione como intermediario/a" if acc1_2 == True:
+                            "alguien que funcione como intermediario{sep}a" if acc1_2 == True:
                                 n "oh, déjame ver en mi sótano de secu- digo de personas que están dispuestas a hacer eso para ayudate ':)"
                                 hide n
                                 "él procede a ver en su sótano..."
                                 "después vuelve"
                                 show n at center_n
-                                n "Oh, parece ser que no hay nadie que te pueda ayudar como intermediario/a"
+                                n "Oh, parece ser que no hay nadie que te pueda ayudar como intermediario{sep}a"
                                 n "es una gran pena"
                                 $ acc1_2 = False
                                 call i_have_a_idea from _call_i_have_a_idea_1
@@ -543,7 +548,7 @@ label start:
             "nah, es broma, jeje"
             "suena un timbre y después de unos momentos unas letras con texto crean una figura humanoide o algo así..."
             "No lo podías distinguir bien porque esta ocult@ en la oscuridad"
-            "pero después sale para decirte algo (ahora lo/la ves mejor)"
+            "pero después sale para decirte algo (ahora lo{sep}la ves mejor)"
             # "poner código aquí xdxd. . ."
             call Brayn from _call_Brayn
             # agregarle un nombre + apariencia del personaje
@@ -552,7 +557,7 @@ label start:
             
 
     # ahora esta es la parte de los idiomas, para configurarlos y ponerlos (más tarde, me da weba)
-    # corregir la atrocidad que fue tr/es
+    # corregir la atrocidad que fue tr{sep}es
     
     label fin:
         
