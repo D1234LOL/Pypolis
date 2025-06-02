@@ -67,13 +67,13 @@ label Brayn:
             "C-Town":
                 "es una opción interesante, sinceramente hablando :3"
                 "así que, vamos ahí"
-                include f"history{os.sep}C-Town.rpy"
+                include f"history/C-Town.rpy"
                 call C from _call_C
             "Bashtopia":
-                include f"history{os.sep}Bash-Island.rpy"
+                include f"history/Bash-Island.rpy"
                 call Bash from _call_Bash
             "CPP-Town":
-                include f"history{os.sep}CPP-Town.rpy"
+                include f"history/CPP-Town.rpy"
                 call Cpp from _call_Cpp
     else:
         call fin from _call_fin

@@ -12,22 +12,22 @@ init python:
 
 # Personajes:
 
-define n = Character("Narrador", image=f"characters{os.sep}narrator.png", color="#107492", what_size=50) # Narrador.
-define n_man = Character("Narrador", image=f"characters{os.sep}narrator.png", color="#1d1092", what_font=f"fonts{os.sep}Badd-Mono.ttf", what_size=50) # Narrador manipulado (es diferente por un font en específico).
+define n = Character("Narrador", image=f"characters/narrator.png", color="#107492", what_size=50) # Narrador.
+define n_man = Character("Narrador", image=f"characters/narrator.png", color="#1d1092", what_font=f"fonts/Badd-Mono.ttf", what_size=50) # Narrador manipulado (es diferente por un font en específico).
 
-define Byn = Character("Brayn", image=f"characters{os.sep}Brayn.png", color="#6d1092", what_font=f"fonts{os.sep}JetBrainsMono.ttf", what_size=50) # un nuevo personaje llamado Brayn, que te ayudará en la aventura
+define Byn = Character("Brayn", image=f"characters/Brayn.png", color="#6d1092", what_font=f"fonts/JetBrainsMono.ttf", what_size=50) # un nuevo personaje llamado Brayn, que te ayudará en la aventura
 
 
-image n =       f"characters{os.sep}narrator.png"             # Narrador normal
-image n_unw =   f"characters{os.sep}narrator_unwilling.png"   # Narrador sin ganas
-image n_happy = f"characters{os.sep}narrator_happy.png"       # Narrador feliz
-image n_ang =   f"characters{os.sep}narrator_angry.png"       # Narrador enfadado
-image n_sad =   f"characters{os.sep}narrator_sad.png"         # Narrador triste
-image n_man =   f"characters{os.sep}narrator_manipulated.png" # Narrador manipulado
-image n_wat =   f"characters{os.sep}narrator_what.png"        # Narrador que no sabe porque elegiste...eso...
+image n =       f"characters/narrator.png"             # Narrador normal
+image n_unw =   f"characters/narrator_unwilling.png"   # Narrador sin ganas
+image n_happy = f"characters/narrator_happy.png"       # Narrador feliz
+image n_ang =   f"characters/narrator_angry.png"       # Narrador enfadado
+image n_sad =   f"characters/narrator_sad.png"         # Narrador triste
+image n_man =   f"characters/narrator_manipulated.png" # Narrador manipulado
+image n_wat =   f"characters/narrator_what.png"        # Narrador que no sabe porque elegiste...eso...
 
 # Brayn, un nuevo personaje de la historia :p
-image Brayn =   f"characters{os.sep}Brayn.png"
+image Brayn =   f"characters/Brayn.png"
 
 python:
     '''
@@ -65,12 +65,12 @@ python:
 
 label start:
     # esto es para la habitación principal (las imágenes))
-    image principal_room = f"rooms{os.sep}room.png"
-    image lights_out_room = f"rooms{os.sep}room_lights_out.png"
+    image principal_room = f"rooms/room.png"
+    image lights_out_room = f"rooms/room_lights_out.png"
     
     # gatitos ¿Porque gatitos? Porque me han pedido 
-    image kittens_room = f"rooms{os.sep}room_2.png" # arreglar la escala a 1620 por 1080 redimensionando la imagen en el script
-    image y-derrepente-PUM = f"rooms{os.sep}PUM_ya_esta_aqui_la_guerra.jpg"
+    image kittens_room = f"rooms/room_2.png" # arreglar la escala a 1620 por 1080 redimensionando la imagen en el script
+    image y-derrepente-PUM = f"rooms/PUM_ya_esta_aqui_la_guerra.jpg"
     
     transform center:
         xalign 0.5
