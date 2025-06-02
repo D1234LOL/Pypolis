@@ -1,0 +1,8 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/history/Brayn.rpy", line 49: 'break' outside loop
+
+Ren'Py Version: Ren'Py 8.3.6.25022803
+Mon May 26 18:10:23 2025
