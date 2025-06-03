@@ -91,6 +91,7 @@ label start:
     $ decision_1 = False
     $ decision_2 = False
     $ anger_n = 0 # no lo hagas enfadar (te lo digo por los finales (en esta alpha no hay finales disponibles...creo xd))
+    $ ASR = 0
     # funciones
     # verificador de números:
     init python:
