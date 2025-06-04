@@ -18,6 +18,11 @@
 ## El _() que rodea la cadena de texto la señala como traducible.
 
 define config.name = _("Pypolis")
+
+# sólo y exclúsivamente para Android
+define build.package = "com.d1234lol.pypolis"
+define build.version = "Alpha-1.0"
+
 # para configurar al gusto
 
 init python:
@@ -39,7 +44,8 @@ define config.version = "Alpha-1.0"
 ## comillas triples y deja una línea en blanco entre párrafos.
 
 define gui.about = _p("""
-"Lorem Ipsum sim asset" - webi wabo
+Pypolis - Alpha 1.0:
+agrega lo básico, lo esencial.
 """)
 
 
