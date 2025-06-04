@@ -34,34 +34,6 @@ image n_wat =   f"characters/narrator_what.png"        # Narrador que no sabe po
 # Brayn, un nuevo personaje de la historia :p
 image Brayn =   f"characters/Brayn.png"
 
-python:
-    '''
-    def chimg_n(img=null): #, fondo=0
-
-    if   img == n: renpy.show(n)             #, at_list=[hs]
-    elif img == n_unw:   renpy.show(n_unw)   #, at_list=[hs]
-    elif img == n_happy: renpy.show(n_happy) #, at_list=[hs]
-    elif img == n_ang:   renpy.show(n_ang)   #, at_list=[hs]
-    elif img == n_sad:   renpy.show(n_sad)   #, at_list=[hs]
-    elif img == n_man:   renpy.show(n_man)   #, at_list=[hs]
-    elif img == n_wat:   renpy.show(n_wat)   #, at_list=[hs]
-    elif img == null:    print("se te olvidó poner algo")
-    else:                print("...no hay ninguna imagen que sea esa")
-    '''
-
-    '''
-    if fondo == 1: 
-            renpy.scene(principal_room)
-    elif fondo == 2: 
-        renpy.scene(lights_out_room)
-    elif fondo == 3: 
-        renpy.scene(kittens_room)
-    elif fondo == 0: 
-        renpy.scene(principal_room)
-    else: print("pon un fondo!!!")
-    '''
-    
-
 
 # El juego comienza aquí.
 # en un mundo muy cuadrado, ok no
@@ -471,7 +443,7 @@ label start:
                                 call i_have_a_idea from _call_i_have_a_idea_2
 
         "Espera, que?!" if qst1_3 == True:
-            n f"a ver [Usrn]...me refiero a que tú me prestes una parte de tu mente para ponerme comunicar contigo de forma más cómoda para mí"
+            n "a ver [Usrn]...me refiero a que tú me prestes una parte de tu mente para ponerme comunicar contigo de forma más cómoda para mí"
             n "si por si acaso no lo has entendido, te repito la pregunta"
             $ qst1_3 = False
             call question from _call_question_1
